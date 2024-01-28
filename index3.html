@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#hide").click(function () {
+        $("#lorem").hide(1000);
+      });
+      $("#show").click(function () {
+        $("#lorem").show(1000);
+      });
+    });
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#p").hide("slow");
+      });
+    });
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif;
+    }
+
+    .header {
+      height: 100vh;
+      width: 100%;
+      background-color: crimson;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .header h1 {
+      background-color: yellow;
+      font-size: 60px;
+      font-weight: 900;
+
+    }
+
+    #header {
+      margin: 50px 140px;
+      height: 75vh;
+      width: 1200px;
+      background-color: #fff;
+      color: black;
+      border-radius: 10px;
+      text-align: start;
+      padding-top: 10px;
+      padding-left: 15px;
+      font-size: 13.30px;
+    }
+
+    #header #a1 {
+      margin: 10px 10px;
+      cursor: pointer;
+    }
+
+    .discover {
+      color: #2169eb;
+      font-weight: bolder;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 10px;
+      border: 0.4px solid rgb(42, 42, 42);
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    #header a img {
+      height: 15px;
+      width: 15px;
+    }
+
+    #personalize {
+      margin-right: 10px;
+      border: 1px solid black;
+      border-radius: 30px;
+      padding: 7px 18px;
+      float: inline-end;
+      cursor: pointer;
+    }
+
+    #imagegallery {
+      height: 535px;
+      width: 1150px;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 50px;
+      color: #fff;
+      font-size: 35px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWx8ZW58MHwwfDB8fHww);
+    }
+
+    #imagegallery #lorem {
+      cursor: pointer;
+      padding: 120px;
+      border: 10px yellow groove;
+      border-radius: 20px;
+    }
+
+    .hide {
+      height: 50px;
+      width: 120px;
+      border-radius: 28px;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      font-size: 15px;
+      font-weight: bolder;
+      background-color: #f7f7f8;
+      color: #2169eb;
+      cursor: pointer;
+      margin-left: -130px;
+      background-attachment: fixed;
+    }
+
+    .show {
+      height: 50px;
+      width: 120px;
+      border-radius: 28px;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      font-size: 15px;
+      font-weight: bolder;
+      background-color: #f7f7f8;
+      color: #2169eb;
+      cursor: pointer;
+      background-attachment: fixed;
+    }
+
+    #header #p {
+      color: yellow;
+      background-color: #2169eb;
+      margin-left: 20px;
+      padding: 8px 24px;
+      font-size: 15px;
+      border-radius: 20px;
+    }
+
+    .traffic {
+      padding: 10px 30px;
+      background-color: yellow;
+      color: #2169eb;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 300px;
+      margin-left: -120px;
+    }
+    /* element */
+    #element{
+      padding: 20px;
+      display: flex;
+    }
+    #element a{
+      color: #4281f7;
+      padding-left: 10px;
+      padding-top: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>This is heading</h1>
+    <div id="header">
+      <button class="discover">Discover</button>
+      <a id="a1">SportPlay</a>
+      <a id="a1">Money</a>
+      <a id="a1">Gmaeing</a>
+      <a id="a1">Weather</a>
+      <a id="a1">Watch</a>
+      <a id="a1">Learning</a>
+      <a id="a1">Health</a>
+      <a id="a1">travel</a>
+      <a id="a1">traffic</a>
+      <a id="p">traffic two</a>
+      <a id="personalize"> <img
+          src="https://th.bing.com/th?id=OIP.-FG2Xy_qjtA-0mw6FOijzgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=2.5&pid=3.1&rm=2"
+          alt="ganda">Personalise</a>
+      <div id="imagegallery">
+        <button class="hide" id="hide">Hide</button>
+        <button class="show" id="show">Show</button>
+        <p id="lorem">If you click on me, I will disappear.</p>
+        <button class="traffic">click me to hide traffice two</button>
+
+      </div>
+    </div>
+  </div>
+  <!-- section -->
+  <section id="element">
+    <h2>Today,s Deals</h2>
+    <a href="./index3.html">See all deals</a>
+    <img src="https://m.media-amazon.com/images/I/41TssgTTkwL._AC_SY400_.jpg" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+  </section>
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
+    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
+    boriosam iusto saepe excepturi cumque!</p> 
+    <!--  new section -->
+</body>
+
+</html>
