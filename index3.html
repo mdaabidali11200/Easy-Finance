@@ -16,8 +16,8 @@
       });
     });
     $(document).ready(function () {
-      $("button").click(function () {
-        $("#p").hide("slow");
+      $("#p").click(function () {
+        $(this).hide(4000);
       });
     });
   </script>
@@ -107,8 +107,7 @@
     #imagegallery #lorem {
       cursor: pointer;
       padding: 120px;
-      border: 10px yellow groove;
-      border-radius: 20px;
+      font-weight: bolder;
     }
 
     .hide {
@@ -149,32 +148,136 @@
       border-radius: 20px;
     }
 
-    .traffic {
-      padding: 10px 30px;
-      background-color: yellow;
-      color: #2169eb;
-      font-size: 20px;
-      margin-top: 30px;
-      border-radius: 300px;
-      margin-left: -120px;
-    }
+
+
     /* element */
-    #element{
+    #element {
       padding: 20px;
-      display: flex;
+      background-color: rgb(241, 240, 240);
     }
-    #element a{
+
+    #element .continant {
+      background-color: white;
+      color: black;
+      padding: 10px;
+    }
+
+    #element .continant .head h2 {
+      margin-left: 30px;
+    }
+
+    #element a {
       color: #4281f7;
       padding-left: 10px;
       padding-top: 10px;
       text-decoration: none;
+    }
+
+    .head {
+      display: flex;
+    }
+
+    .imgcart {
+      padding: 10px;
+      width: 100%;
+    }
+
+    .imgcart ul {
+      height: 280px;
+      width: 100%;
+      background-color: rgb(254, 254, 254);
+      padding: 5px 15px;
+      display: flex;
+      overflow-x: auto;
+    }
+    
+    .imgcart ul img {
+      height: 200px;
+      padding: 5px 10px;
+      border-radius: 15px;
+      
+    }
+
+    .imgcart .caption {
+      width: 185.75px;
+      height: 24px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+    }
+
+    .imgcart .caption .rbtn {
+      width: 50%;
+      height: 24px;
+      margin-bottom: 4px;
+      background-color: rgb(211, 17, 17);
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      padding-left: 5px;
+      padding-top: 5px;
+      border-radius: 5px;
+    }
+
+    .imgcart .caption .wbtn {
+      width: 50%;
+      height: 24px;
+      margin-bottom: 4px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(211, 17, 17);
+      font-weight: bolder;
+      font-size: 12px;
+      padding-left: 5px;
+      padding-top: 5px;
+    }
+    .imgcart .silmpletext{
+      width: 185.75px;
+      height: auto;
+      background-color: #ffffff;
+      color: black;
+      font-size: 14px;
+    }
+    .imgcart .imgcart-caption{
+      padding: 0px 20px;
+    }
+    .secondcart{
+      height: 385px;
+      width: 100%;
+      background-color: rgb(212, 212, 195);
+      margin-top: 20px;
+    }
+    .headsecond{
+      display: flex;
+    }
+    .headsecond h1{
+      margin-left: 30px;
+      padding-top: 20px;
+    }
+    .headsecond a{
+      margin-top: 20px;
+    }
+    .secondcart .imagesgee{
+      display: flex;
+      overflow-x: auto;
+      padding: 20px 20px;
+    }
+    .secondcart .imagesgee img{
+      width: 240px;
+      height: 220px;
+      padding-right: 20px;
+    }
+    .imagesgee{
+      overflow-x: auto;
+    }
+    .imagesgee .imagesgeecaption{
+      
+      display: flex;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1>This is heading</h1>
+    <h1>Welcome to my website</h1>
     <div id="header">
       <button class="discover">Discover</button>
       <a id="a1">SportPlay</a>
@@ -186,7 +289,7 @@
       <a id="a1">Health</a>
       <a id="a1">travel</a>
       <a id="a1">traffic</a>
-      <a id="p">traffic two</a>
+      <a id="p">disappear</a>
       <a id="personalize"> <img
           src="https://th.bing.com/th?id=OIP.-FG2Xy_qjtA-0mw6FOijzgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=2.5&pid=3.1&rm=2"
           alt="ganda">Personalise</a>
@@ -194,57 +297,313 @@
         <button class="hide" id="hide">Hide</button>
         <button class="show" id="show">Show</button>
         <p id="lorem">If you click on me, I will disappear.</p>
-        <button class="traffic">click me to hide traffice two</button>
-
       </div>
     </div>
   </div>
   <!-- section -->
   <section id="element">
-    <h2>Today,s Deals</h2>
-    <a href="./index3.html">See all deals</a>
-    <img src="https://m.media-amazon.com/images/I/41TssgTTkwL._AC_SY400_.jpg" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
+    <div class="continant">
+      <div class="head">
+        <h2>Today,s Deals</h2>
+        <a href="./index3.html">See all deals</a>
+      </div>
+      <div class="imgcart">
+        <ul>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/41TssgTTkwL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/517TmhKEWbL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div  class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/51Q8ZoVG3oL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div>
+            <img src="https://m.media-amazon.com/images/I/41uGjvXbeBL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/71u9fl51ReL._SY695__AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div>
+            <img src="https://m.media-amazon.com/images/I/411cyLCsDzL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/81AHUh3eY4L._SY695__AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div>
+            <img src="https://m.media-amazon.com/images/I/41voGHOxy4L._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/416hvvDEp6L._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div>
+            <img src="https://m.media-amazon.com/images/I/31-TqE7SqjL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/41DVuKY7KeL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/41h5U0ROy6L._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <div>
+              <img src="https://m.media-amazon.com/images/I/31sv3QmGsmL._AC_SY400_.jpg" alt="">
+            </div>
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/41Q8ngaU8aL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/31ymW6KDjoL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/41c4C6Sp1AL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/41HbpsORdTL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+          <div class="imgcart-caption">
+            <img src="https://m.media-amazon.com/images/I/41xbneWY5SL._AC_SY400_.jpg" alt="">
+            <div class="caption">
+              <div class="rbtn">
+                Up to 52% off
+              </div>
+              <div class="wbtn">
+                Dels of the Day
+              </div>
+            </div>
+            <div class="silmpletext">
+              Best Offers From Top Brands
+            </div>
+          </div>
+        </ul>
+
+      </div>
+    </div>
+  <div class="secondcart">
+    <div class="headsecond">
+      <h1>Up to 60% off | Transform your space with our best kitchen appliances from Local shops</h1>
+      <a href="#">See all offers</a>
+    </div>
+    <div class="imagesgee">
+      <ul>
+       <div class="imagesgeecaption">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+       </div>
+      </ul>
+    </div>
+  </div>
   </section>
-   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore consectetur nesciunt nam
-    exercitationem voluptatum id numquam earum, perferendis nobis qui soluta quibusdam dolor corporis, la
-    boriosam iusto saepe excepturi cumque!</p> 
-    <!--  new section -->
+ 
 </body>
 
 </html>
