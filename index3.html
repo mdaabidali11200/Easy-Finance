@@ -4,275 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" href="../Easy-Finance/PIC/aabid.jpg" style="height: 64; width: 64;">
+  <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#hide").click(function () {
-        $("#lorem").hide(1000);
-      });
-      $("#show").click(function () {
-        $("#lorem").show(1000);
-      });
-    });
-    $(document).ready(function () {
-      $("#p").click(function () {
-        $(this).hide(4000);
-      });
-    });
-  </script>
-  <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-      font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif;
-    }
-
-    .header {
-      height: 100vh;
-      width: 100%;
-      background-color: crimson;
-      text-align: center;
-      padding-top: 30px;
-    }
-
-    .header h1 {
-      background-color: yellow;
-      font-size: 60px;
-      font-weight: 900;
-
-    }
-
-    #header {
-      margin: 50px 140px;
-      height: 75vh;
-      width: 1200px;
-      background-color: #fff;
-      color: black;
-      border-radius: 10px;
-      text-align: start;
-      padding-top: 10px;
-      padding-left: 15px;
-      font-size: 13.30px;
-    }
-
-    #header #a1 {
-      margin: 10px 10px;
-      cursor: pointer;
-    }
-
-    .discover {
-      color: #2169eb;
-      font-weight: bolder;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 5px;
-      padding-right: 5px;
-      border-radius: 10px;
-      border: 0.4px solid rgb(42, 42, 42);
-      margin-right: 10px;
-      cursor: pointer;
-    }
-
-    #header a img {
-      height: 15px;
-      width: 15px;
-    }
-
-    #personalize {
-      margin-right: 10px;
-      border: 1px solid black;
-      border-radius: 30px;
-      padding: 7px 18px;
-      float: inline-end;
-      cursor: pointer;
-    }
-
-    #imagegallery {
-      height: 535px;
-      width: 1150px;
-      margin: 10px;
-      border-radius: 10px;
-      text-align: center;
-      font-weight: 50px;
-      color: #fff;
-      font-size: 35px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-image: url(https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWx8ZW58MHwwfDB8fHww);
-    }
-
-    #imagegallery #lorem {
-      cursor: pointer;
-      padding: 120px;
-      font-weight: bolder;
-    }
-
-    .hide {
-      height: 50px;
-      width: 120px;
-      border-radius: 28px;
-      padding-top: 10px;
-      padding-bottom: 12px;
-      font-size: 15px;
-      font-weight: bolder;
-      background-color: #f7f7f8;
-      color: #2169eb;
-      cursor: pointer;
-      margin-left: -130px;
-      background-attachment: fixed;
-    }
-
-    .show {
-      height: 50px;
-      width: 120px;
-      border-radius: 28px;
-      padding-top: 10px;
-      padding-bottom: 12px;
-      font-size: 15px;
-      font-weight: bolder;
-      background-color: #f7f7f8;
-      color: #2169eb;
-      cursor: pointer;
-      background-attachment: fixed;
-    }
-
-    #header #p {
-      color: yellow;
-      background-color: #2169eb;
-      margin-left: 20px;
-      padding: 8px 24px;
-      font-size: 15px;
-      border-radius: 20px;
-    }
-
-
-
-    /* element */
-    #element {
-      padding: 20px;
-      background-color: rgb(241, 240, 240);
-    }
-
-    #element .continant {
-      background-color: white;
-      color: black;
-      padding: 10px;
-    }
-
-    #element .continant .head h2 {
-      margin-left: 30px;
-    }
-
-    #element a {
-      color: #4281f7;
-      padding-left: 10px;
-      padding-top: 10px;
-      text-decoration: none;
-    }
-
-    .head {
-      display: flex;
-    }
-
-    .imgcart {
-      padding: 10px;
-      width: 100%;
-    }
-
-    .imgcart ul {
-      height: 280px;
-      width: 100%;
-      background-color: rgb(254, 254, 254);
-      padding: 5px 15px;
-      display: flex;
-      overflow-x: auto;
-    }
-    
-    .imgcart ul img {
-      height: 200px;
-      padding: 5px 10px;
-      border-radius: 15px;
-      
-    }
-
-    .imgcart .caption {
-      width: 185.75px;
-      height: 24px;
-      background-color: rgb(255, 255, 255);
-      display: flex;
-    }
-
-    .imgcart .caption .rbtn {
-      width: 50%;
-      height: 24px;
-      margin-bottom: 4px;
-      background-color: rgb(211, 17, 17);
-      color: white;
-      font-weight: bold;
-      font-size: 12px;
-      padding-left: 5px;
-      padding-top: 5px;
-      border-radius: 5px;
-    }
-
-    .imgcart .caption .wbtn {
-      width: 50%;
-      height: 24px;
-      margin-bottom: 4px;
-      background-color: rgb(255, 255, 255);
-      color: rgb(211, 17, 17);
-      font-weight: bolder;
-      font-size: 12px;
-      padding-left: 5px;
-      padding-top: 5px;
-    }
-    .imgcart .silmpletext{
-      width: 185.75px;
-      height: auto;
-      background-color: #ffffff;
-      color: black;
-      font-size: 14px;
-    }
-    .imgcart .imgcart-caption{
-      padding: 0px 20px;
-    }
-    .secondcart{
-      height: 385px;
-      width: 100%;
-      background-color: rgb(212, 212, 195);
-      margin-top: 20px;
-    }
-    .headsecond{
-      display: flex;
-    }
-    .headsecond h1{
-      margin-left: 30px;
-      padding-top: 20px;
-    }
-    .headsecond a{
-      margin-top: 20px;
-    }
-    .secondcart .imagesgee{
-      display: flex;
-      overflow-x: auto;
-      padding: 20px 20px;
-    }
-    .secondcart .imagesgee img{
-      width: 240px;
-      height: 220px;
-      padding-right: 20px;
-    }
-    .imagesgee{
-      overflow-x: auto;
-    }
-    .imagesgee .imagesgeecaption{
-      
-      display: flex;
-    }
-  </style>
+  <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
@@ -296,16 +31,20 @@
       <div id="imagegallery">
         <button class="hide" id="hide">Hide</button>
         <button class="show" id="show">Show</button>
-        <p id="lorem">If you click on me, I will disappear.</p>
+        <p id="lorem">If you click the hide button, the text <br>
+          written below gets hidden, <br>
+          if you click the show button then it will appear</p>
       </div>
     </div>
   </div>
-  <!-- section -->
+  <!--  new section -->
   <section id="element">
     <div class="continant">
       <div class="head">
         <h2>Today,s Deals</h2>
-        <a href="./index3.html">See all deals</a>
+        <a
+          href="https://www.amazon.in/gp/goldbox/?ie=UTF8&ref=nav_topnav_deals&ref_=dlx_gate_sd_dcl_vai_dt_pd_gw_unk&pd_rd_w=zbmhw&content-id=amzn1.sym.9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_p=9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_r=1M64PDZCA2W531R80TCF&pd_rd_wg=HIcpo&pd_rd_r=4fc4bd6f-629a-485c-b603-688115bf598a">See
+          all deals</a>
       </div>
       <div class="imgcart">
         <ul>
@@ -337,7 +76,7 @@
               Best Offers From Top Brands
             </div>
           </div>
-          <div  class="imgcart-caption">
+          <div class="imgcart-caption">
             <img src="https://m.media-amazon.com/images/I/51Q8ZoVG3oL._AC_SY400_.jpg" alt="">
             <div class="caption">
               <div class="rbtn">
@@ -567,43 +306,290 @@
 
       </div>
     </div>
-  <div class="secondcart">
-    <div class="headsecond">
-      <h1>Up to 60% off | Transform your space with our best kitchen appliances from Local shops</h1>
-      <a href="#">See all offers</a>
+    <div class="secondcart">
+      <div class="container">
+        <div class="headsecond">
+          <h1>Up to 60% off | Transform your space with our best kitchen appliances from Local shops</h1>
+          <a
+            href="https://www.amazon.in/b?node=86225863031&pd_rd_w=Uu0vp&content-id=amzn1.sym.ba1a1677-a267-4d29-b945-ca8baa0b9f88&pf_rd_p=ba1a1677-a267-4d29-b945-ca8baa0b9f88&pf_rd_r=1M64PDZCA2W531R80TCF&pd_rd_wg=MQ6Ae&pd_rd_r=ccb3640d-faa5-4f70-b817-e242f7437ec4">See
+            all offers</a>
+        </div>
+        <div class="imagesgee">
+          <ul>
+            <div class="imagesgeecaption">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+              <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
+            </div>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="imagesgee">
-      <ul>
-       <div class="imagesgeecaption">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-        <img src="https://m.media-amazon.com/images/I/51qzMqTzAyL._AC_SY400_.jpg" alt="">
-       </div>
-      </ul>
+
+    <div class="crushed">
+      <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/a373daa6-fae7-4997-9ac2-9ecf182d9787.jpeg"
+        alt="">
     </div>
-  </div>
+    
+    <div class="cardbody">
+      <div class="cardone">
+        <h1>Bestsellers in Women's Indian Clothing</h1>
+        <div class="multiimage">
+          <img src="https://m.media-amazon.com/images/I/61UaOebngeL._AC_SY340_.jpg" alt="">
+          <img src="https://m.media-amazon.com/images/I/51LfzsMZAWL._AC_SY340_.jpg" alt="">
+          <img src="https://m.media-amazon.com/images/I/61kIVnGChCL._AC_SY340_.jpg" alt="">
+          <img src="https://m.media-amazon.com/images/I/41EPTfn5-wL._AC_SY340_.jpg" alt="">
+
+        </div>
+      </div>
+      <div class="cardtwo">
+        <h1>Minimum 50% off | Top styles for her</h1>
+      </div>
+      <div class="cardthree">
+        <p>card three</p>
+      </div>
+      <div class="cardfour">
+        <p>card four</p>
+      </div>
+    </div>
+    <div class="hundred158">
+      <p>
+        Skip to main content
+        .in
+        Delivering to Mumbai 400001
+        Update location
+        Appliances
+
+        Appliances
+        Search Amazon.in
+        EN
+        Hello, sign in
+        Account & Lists
+        Returns
+        & Orders
+        0
+        Cart
+        All
+        Fresh
+        Amazon miniTV
+        Sell
+        Best Sellers
+        Today's Deals
+        Mobiles
+        Electronics
+        Customer Service
+        Prime
+        New Releases
+        Gift Ideas
+        Home & Kitchen
+        Fashion
+        Amazon Pay
+        Computers
+        Books
+        Car & Motorbike
+        Toys & Games
+        Home Improvement
+        Sports, Fitness & Outdoors
+        Beauty & Personal Care
+        Coupons
+        Health, Household & Personal Care
+        Gift Cards
+        Grocery & Gourmet Foods
+        Video Games
+        Subscribe & Save
+        Baby
+        Pet Supplies
+        Audible
+        AmazonBasics
+        Kindle eBooks
+        New Launches from Mobile, Electronics & more
+        Category
+        Home & Kitchen
+        Appliances
+        Electronics
+        Industrial & Scientific
+        Office Products
+        Garden & Outdoors
+        Health & Personal Care
+        Jewellery
+        Clothing & Accessories
+        Grocery & Gourmet Foods
+        Luggage & Bags
+        Sports, Fitness & Outdoors
+        Tools & Home Improvement
+        Toys & Games
+        1-12 of 830 results for All Categories
+        Amazon's Choice
+        Meditouch - The Healing Touch Meditouch Orthopeadic Electric Plaster Cutter Machine 125 Watts Ortho Pop Cutting
+        Saw With T...
+        Meditouch - The Healing Touch Meditouch Orthopeadic Electric Plaster Cutter Machine 125 Watts Ortho Pop Cutting
+        Saw With Two Blades Black Colour
+        4.2 out of 5 stars 75
+        ₹5,999 M.R.P: ₹9,500 (37% off)
+        Get it by Tuesday, 6 February
+        Bajaj Mixer Grinder Suitable - ITIDA Chutney jar 400ML(Black), Stainless Steel, Brand- ITIDA
+        Bajaj Mixer Grinder Suitable - ITIDA Chutney jar 400ML(Black), Stainless Steel, Brand- ITIDA
+        3.3 out of 5 stars 155
+        ₹499 M.R.P: ₹799 (38% off)
+        Save 5% with coupon
+        Get it by Friday, 2 February
+        Milcent Five Star Talky with Vaccu Clean (Fully Automatic with Child Safety & Life Time Guaranty on Grinding
+        Chamber) Aata...
+        Milcent Five Star Talky with Vaccu Clean (Fully Automatic with Child Safety & Life Time Guaranty on Grinding
+        Chamber) Aata Maker, Flour Mill, Ghar Ghanti, Atta Chakki (Motor- 1 HP) White Flower
+        3.2 out of 5 stars 39
+        ₹24,990 M.R.P: ₹26,990 (7% off)
+        Get it Wednesday, 21 February - Saturday, 24 February
+        Hanging Weighing Scale for Gas Cylinders, Luggage, Agricultural Use, Capacity 60 kg (Colour of product may vary)
+        Hanging Weighing Scale for Gas Cylinders, Luggage, Agricultural Use, Capacity 60 kg (Colour of product may vary)
+        3.7 out of 5 stars 28
+        ₹2,835 M.R.P: ₹3,500 (19% off)
+        Get it by Sunday, 4 February
+        Max Star Champion 450W JMG-05
+        Max Star Champion 450W JMG-05
+        5.0 out of 5 stars 2
+        No featured offers available
+        ₹2,100(2 new offers)
+        Shreeji Fine Automatic Domestic Flour Mill Machine, Atta Chakki, Aata Maker, Ghar Ghanti, Flour Mill for Home
+        (Basil Leaves)
+        Shreeji Fine Automatic Domestic Flour Mill Machine, Atta Chakki, Aata Maker, Ghar Ghanti, Flour Mill for Home
+        (Basil Leaves)
+        4.6 out of 5 stars 445
+        Deal of the Day
+        ₹18,239 M.R.P: ₹26,800 (32% off)
+        Get it Saturday, 10 February - Wednesday, 14 February
+        FREE Delivery
+        TOMdoxx Barbeque Grill Electric Smokeless Indoor/Outdoor Grill Portable Adjustable Temperature Control, 2000W
+        Bbq With Ha...
+        TOMdoxx Barbeque Grill Electric Smokeless Indoor/Outdoor Grill Portable Adjustable Temperature Control, 2000W
+        (Bbq With Hammer) - Black, Free Standing
+        3.9 out of 5 stars 766
+        ₹2,245 M.R.P: ₹4,999 (55% off)
+        Get it by Friday, 2 February
+        EVIZIA Barbeque Grill Electric Smokeless Indoor Outdoor Grill Portable Adjustable Temperature Control 2000W -
+        Black Stic...
+        EVIZIA Barbeque Grill Electric Smokeless Indoor Outdoor Grill Portable Adjustable Temperature Control 2000W -
+        Black (Stick_Net_Spatula & Oil Brush)
+        4.1 out of 5 stars 131
+        ₹2,199 M.R.P: ₹3,580 (39% off)
+        Get it by Friday, 2 February
+        CRUNCHY 4
+        CRUNCHY 4
+        3.1 out of 5 stars 17
+        ₹2,400 M.R.P: ₹2,690 (11% off)
+        Get it by Tuesday, 6 February
+        SWAURSAHA Nonstick Grill Sandwich Toaster | Grill Sandwich Maker | Gas Sandwich Toaster (Black)
+        SWAURSAHA Nonstick Grill Sandwich Toaster | Grill Sandwich Maker | Gas Sandwich Toaster (Black)
+        ₹349 M.R.P: ₹699 (50% off)
+        Get it by Friday, 2 February
+        V-Sons Automatic Domestic Flour Mill Machine, Atta Chakki, Aata Maker, Ghar Ghanti, Flour Mill for Home
+        V-Sons Automatic Domestic Flour Mill Machine, Atta Chakki, Aata Maker, Ghar Ghanti, Flour Mill for Home
+        4.4 out of 5 stars 92
+        ₹14,690 M.R.P: ₹27,900 (47% off)
+        Save ₹1,000 with coupon
+        Get it Monday, 5 February - Thursday, 8 February
+        FREE Delivery
+        Vids 2000 Watt Coil Electric Stove (Copper Wire With 15 Amp Power Plug) / Electric Cooking Heater/G Coil Hot
+        Plate Cooking...
+        Vids 2000 Watt Coil Electric Stove (Copper Wire With 15 Amp Power Plug) / Electric Cooking Heater/G Coil Hot
+        Plate Cooking Stove/Induction Cooktop (Mild Steel Body) (1 Burner) Dark Grey, Radiant
+        3.7 out of 5 stars 226
+        ₹1,899 M.R.P: ₹3,499 (46% off)
+        Get it by Sunday, 4 February
+        See all results
+        Back to top
+        Get to Know Us
+        About Us
+        Careers
+        Press Releases
+        Amazon Science
+        Connect with Us
+        Facebook
+        Twitter
+        Instagram
+        Make Money with Us
+        Sell on Amazon
+        Sell under Amazon Accelerator
+        Protect and Build Your Brand
+        Amazon Global Selling
+        Become an Affiliate
+        Fulfilment by Amazon
+        Advertise Your Products
+        Amazon Pay on Merchants
+        Let Us Help You
+        COVID-19 and Amazon
+        Your Account
+        Returns Centre
+        100% Purchase Protection
+        Amazon App Download
+        Help
+
+        English
+        Australia
+        Brazil
+        Canada
+        China
+        France
+        Germany
+        Italy
+        Japan
+        Mexico
+        Netherlands
+        Poland
+        Singapore
+        Spain
+        Turkey
+        United Arab Emirates
+        United Kingdom
+        United States
+        AbeBooks
+        Books, art
+        & collectibles Amazon Web Services
+        Scalable Cloud
+        Computing Services Audible
+        Download
+        Audio Books IMDb
+        Movies, TV
+        & Celebrities
+
+        Shopbop
+        Designer
+        Fashion Brands Amazon Business
+        Everything For
+        Your Business Prime Now
+        2-Hour Delivery
+        on Everyday Items Amazon Prime Music
+        100 million songs, ad-free
+        Over 15 million podcast episodes
+        Conditions of Use & Sale
+        Privacy Notice
+        Interest-Based Ads
+        © 1996-2024, Amazon.com, Inc. or its affiliates
+
+      </p>
+    </div>
   </section>
- 
+  <script src="./script3.js"></script>
 </body>
 
 </html>
