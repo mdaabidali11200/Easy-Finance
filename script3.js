@@ -11,3 +11,4 @@ $(document).ready(function () {
       $(this).hide(4000);
     });
   });
+

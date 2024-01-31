@@ -301,6 +301,8 @@
     height: 420px;
     width: 24%;
     background-color: #0624e3;
+    color: white;
+    padding: 10px;
 }
 
 .cardthree {
@@ -313,4 +315,33 @@
     height: 420px;
     width: 24%;
     background-color: #06d7f7;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to right, red, blue, yellow, green);
+}
+.d1img{
+    width: 296px;
+    height: 139px;
+    display: fex;
+    
+    
+}
+.d1img img{
+     width: 152px;
+    height: 102px;
+   /* margin-right: 10px; */
+}
+.d2img{
+    width: 296px;
+    height: 139px;
+    display: flex;
+       
+}
+.d2img img{
+    /* width: 152px;
+    height: 102px;
+    margin-right: 10px; */
 }
