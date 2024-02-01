@@ -6,5 +6,5 @@ var remove = Document.querySelector("#remove")
 
 addFriend.addEventListener("click", function () {
     istatus.innerHTML = "Friends"
-    istatus.style.color = "green"
+    
 })

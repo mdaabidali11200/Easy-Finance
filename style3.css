@@ -291,7 +291,9 @@
    width: 296px;
    height: 320px;
 }
-
+.cardone .multiimage{
+    padding-top: 20px;
+}
 .cardone img{
     height: 157px;
     width: 145px;
@@ -303,6 +305,7 @@
     background-color: #0624e3;
     color: white;
     padding: 10px;
+    
 }
 
 .cardthree {
@@ -325,14 +328,15 @@
 .d1img{
     width: 296px;
     height: 139px;
-    display: fex;
+    display: flex;
     
     
 }
 .d1img img{
      width: 152px;
     height: 102px;
-   /* margin-right: 10px; */
+    margin-right: 10px; 
+ 
 }
 .d2img{
     width: 296px;
@@ -341,7 +345,82 @@
        
 }
 .d2img img{
-    /* width: 152px;
+     width: 152px;
     height: 102px;
-    margin-right: 10px; */
+    margin-right: 10px;
+}
+.cardtwo .d1img{
+    margin-top: 20px;
+}
+.cardthree h1{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cardthreeimg img{
+    padding: 10px;
+    margin-left: 10px;
+    width: 324px;
+    height: 340px;
+}
+.cardfour h1{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.imagecontainer{
+    width: 336px;
+    height: 276px;
+}
+.imagecontainer-first{
+    width: 296px;
+    height: 138px;
+    display: flex;
+    margin-left: 10px;
+}
+#textimg{
+    width: 140px;
+    height: 138px;
+}
+#textimg2{
+    width: 140px;
+    height: 138px;
+    margin-left: 30px;
+}
+#textimg img{
+    width: 154px;
+    height: 102px;
+}
+
+#textimg2 img{
+    width: 154px;
+    height: 102px;
+}
+.imagecontainer-second{
+    width: 296px;
+    height: 138px;
+    display: flex;
+    margin-left: 10px;
+}
+#textimgfirstone{
+    width: 140px;
+    height: 138px;
+}
+
+#textimgfirstone img{
+    width: 154px;
+    height: 102px;
+}
+
+#textimg2secondtwo{
+    width: 140px;
+    height: 138px;
+    margin-left: 30px;
+}
+
+#textimg2secondtwo img{
+    width: 150px;
+    height: 102px;
+    
+}
+span{
+    font-size: 12px;
 }
