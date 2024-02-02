@@ -47,7 +47,9 @@ body{
     border-radius: 10px;
     font-weight: bold;
     margin: 7px;
+    border: none;
     cursor: pointer;
+    
     
 }
 #card #remove{

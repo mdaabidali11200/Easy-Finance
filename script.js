@@ -1,10 +1,15 @@
-var istatus = Document.querySelector("h5")
+var istatus = document.querySelector("h5")
 
-var addFriend = Document.querySelector("#add")
+var addfriend = document.querySelector("#add")
 
-var remove = Document.querySelector("#remove")
+var removefriend = document.querySelector("#remove")
 
-addFriend.addEventListener("click", function () {
+addfriend.addEventListener("click", function(){
     istatus.innerHTML = "Friends"
-    
-})
+    istatus.style.color = "green"
+});
+
+removefriend.addEventListener("click", function(){
+    istatus.innerHTML = "stranger"
+    istatus.style.color = "red"
+});
